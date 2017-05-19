@@ -177,7 +177,7 @@ func configProtect() error {
 		case "pass": //Pass the query to server
 			Config.ActionFunc = nil
 		default:
-			return errors.New("Invalid 'action' cofiguration: " + Config.Action)
+			return errors.New("Invalid 'action' configuration: " + Config.Action)
 		}
 	} else {
 		logger.Infof("'action' not configured, assuming: drop")
